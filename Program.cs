@@ -13,7 +13,7 @@ namespace docker_azure
                 .UseKestrel()
 				.Configure(app => app.Run(context =>
 				{
-					return context.Response.WriteAsync($"Hello, Universe! It is {DateTime.Now}");
+					return context.Response.WriteAsync($"Continuous Integration and Deployment between Github, Docker Cloud and Azure. The date and time is {DateTime.Now}");
 				}))
 				.Build();
 
