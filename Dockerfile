@@ -9,6 +9,6 @@ RUN ["dotnet", "build"]
 
 EXPOSE 8080/tcp
 EXPOSE 80/tcp
-ENV ASPNETCORE_URLS http://*:80
+ENV ASPNETCORE_URLS http://*:8080
 
 ENTRYPOINT ["dotnet", "run"]
